@@ -1,135 +1,317 @@
-<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <ItemGroup Label="ProjectConfigurations">
-    <ProjectConfiguration Include="Debug|Win32">
-      <Configuration>Debug</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|Win32">
-      <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Debug|x64">
-      <Configuration>Debug</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Release|x64">
-      <Configuration>Release</Configuration>
-      <Platform>x64</Platform>
-    </ProjectConfiguration>
-  </ItemGroup>
-  <PropertyGroup Label="Globals">
-    <VCProjectVersion>16.0</VCProjectVersion>
-    <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{146861ce-27c8-4264-9fd1-5d999ed1ecd1}</ProjectGuid>
-    <RootNamespace>laba4algoritmi</RootNamespace>
-    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
-    <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v143</PlatformToolset>
-    <WholeProgramOptimization>true</WholeProgramOptimization>
-    <CharacterSet>Unicode</CharacterSet>
-  </PropertyGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
-  <ImportGroup Label="ExtensionSettings">
-  </ImportGroup>
-  <ImportGroup Label="Shared">
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-  </ImportGroup>
-  <PropertyGroup Label="UserMacros" />
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
-    <ClCompile>
-      <WarningLevel>Level3</WarningLevel>
-      <FunctionLevelLinking>true</FunctionLevelLinking>
-      <IntrinsicFunctions>true</IntrinsicFunctions>
-      <SDLCheck>true</SDLCheck>
-      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <ConformanceMode>true</ConformanceMode>
-    </ClCompile>
-    <Link>
-      <SubSystem>Console</SubSystem>
-      <EnableCOMDATFolding>true</EnableCOMDATFolding>
-      <OptimizeReferences>true</OptimizeReferences>
-      <GenerateDebugInformation>true</GenerateDebugInformation>
-    </Link>
-  </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
-  <ImportGroup Label="ExtensionTargets">
-  </ImportGroup>
-</Project>
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int maxSum = 0; 
+vector<int> optimalPath;  // для хранения оптимального пути
+
+//  для поиска оптимального пути и максимальной суммы
+void findOptimalPath(const vector<vector<int>>& triangle, int row, int col, int currentSum, vector<int>& currentPath) {
+    currentPath.push_back(triangle[row][col]);     // Добавляем текущую вершину к пути
+    currentSum += triangle[row][col]; 
+
+    // Если достигнута последняя строка
+    if (row == triangle.size() - 1) {
+        if (currentSum > maxSum) {
+            maxSum = currentSum;
+            optimalPath = currentPath;
+        }
+    }
+    else {
+        // Рекурсивно вызываем функцию для следующей строки и текущего/следующего столбца
+        findOptimalPath(triangle, row + 1, col, currentSum, currentPath);
+        findOptimalPath(triangle, row + 1, col + 1, currentSum, currentPath);
+    }
+    currentPath.pop_back();     // Удаление последней доб вершины и нагрузки при возврате 
+}
+
+// для поиска минимального пути в четырехугольнике
+int findMinPath(const vector<vector<int>>&quadrilateral, int row, int col) {
+    if (row == quadrilateral.size() - 1) {
+        return quadrilateral[row][col];
+    }
+
+    int leftPath = findMinPath(quadrilateral, row + 1, col);              //  вызовы для 2х соседних элементов в следующей строке
+    int rightPath = findMinPath(quadrilateral, row + 1, col + 1);
+
+    return quadrilateral[row][col] + min(leftPath, rightPath);   // Возвр мин знач нагрузки + тек эл
+} 
+
+/// Функция для нахождения оптимальной последовательности операций
+void optimalSequence(int exponent, vector<int>& operations) {
+
+    vector<int> minOperations(exponent + 1, INT_MAX);
+
+    minOperations[1] = 0;   // Искл
+
+    for (int i = 1; i <= exponent; ++i) {
+        // Возведение в квадрат
+        if (i * i <= exponent && minOperations[i] + 1 < minOperations[i * i]) {
+            minOperations[i * i] = minOperations[i] + 1;
+        }
+
+        // Умножение
+        for (int j = i; j <= exponent; ++j) {
+            if (i * j <= exponent && minOperations[i] + minOperations[j] < minOperations[i * j]) {
+                minOperations[i * j] = minOperations[i] + minOperations[j];
+            }
+        }
+    }
+
+    // Восстановление оптимальной последовательности операций
+    int remaining = exponent;
+    while (remaining > 1) {
+        operations.push_back(remaining);
+        if (remaining % 2 == 0) {
+            if (minOperations[remaining / 2] < minOperations[remaining - 1]) {
+                remaining /= 2;
+            }
+            else {
+                remaining -= 1;
+            }
+        }
+        else {
+            remaining -= 1;
+        }
+    }
+    operations.push_back(1);
+    reverse(operations.begin(), operations.end());  // Реверс для вывода в правильном порядке
+}
+
+// Функция для нахождения максимально совпадающей подцепочки
+string findMaxCommonSubsequence(const string& str1, const string& str2, int i, int j) {
+
+    if (i == 0 || j == 0)    // если одна из цепочек пуста, возвращаем пустую строку
+    {
+        return "";
+    }
+
+    if (str1[i - 1] == str2[j - 1])// Если символы совпадают, доб к результ и уменьшаем индексы
+    { 
+        return findMaxCommonSubsequence(str1, str2, i - 1, j - 1) + str1[i - 1];
+    }
+    else {       // Если символы не совпадают,  вызыв функции для 2 вариантов: 1. Уменьшаем индекс первой цепочки  2. Уменьшаем индекс второй цепочки
+        string result1 = findMaxCommonSubsequence(str1, str2, i - 1, j);
+        string result2 = findMaxCommonSubsequence(str1, str2, i, j - 1);
+
+        return (result1.length() > result2.length()) ? result1 : result2;         // Возвращаем максимальную из найденных подцепочек
+    }
+}
+
+// Структура для предметов
+struct Item {
+    int weight;
+    int value;
+};
+
+// задачи о рюкзаке 
+int knapsackRecursive(int capacity, const vector<Item>& items, int index, vector<int>& includedItems) {
+    if (index == 0 || capacity == 0) {  //  если индекс или вместимость стали равны нулю
+        return 0;
+    }
+   
+    if (items[index - 1].weight > capacity) 
+    {  // Если вес предмета превышает оставшуюся вместимость рюкзака, искл его из рассмотрения
+        return knapsackRecursive(capacity, items, index - 1, includedItems);
+    }
+    else {
+       
+        int include = items[index - 1].value + knapsackRecursive(capacity - items[index - 1].weight, items, index - 1, includedItems);  // Рекурсивно рассматриваем два случая:  1. Включаем текущий предмет в рюкзак 2. Не включаем текущий предмет в рюкзак
+        int exclude = knapsackRecursive(capacity, items, index - 1, includedItems);
+
+        // Выбормакс полезности 
+        if (include > exclude) {
+            includedItems[index - 1] = 1; // Помечаем тек предмет 
+            return include;
+        }
+        else {
+            return exclude;
+        }
+    }
+}
+
+int main() {
+    setlocale(LC_ALL, "RUS");
+    //Меню
+    int x, answer;
+    cout << endl;
+    cout << "1.Поиск оптимального пути и максимальной суммы" << endl;
+    cout << "2.Поиск минимального пути в четырехугольнике" << endl;
+    cout << "3.Поиск оптимальной последовательности операций при возведении числа в степень" << endl;
+    cout << "4.Поиск максимально совпадающей подцепочки " << endl;
+    cout << "5.Решение задачи о рюкзаке" << endl;
+    cout << endl;
+    cout << "Введите нужный алгоритм: ";
+    cin >> x;
+    cout << endl;
+
+    if (x == 1) {
+        cout << "ПОИСК ОПТИМАЛЬНОГО ПУТИ И МАКСИМАЛЬНОЙ СУММЫ" << endl;
+        cout << endl;
+        int size;
+        cout << "Введите размер треугольника: ";
+        cin >> size;
+
+        // Ввод нагрузок на вершины треугольника
+        vector<vector<int>> triangle(size);
+        cout << "Введите нагрузки на вершины треугольника: " << endl;
+        for (int i = 0; i < size; i++) {
+            triangle[i].resize(i + 1);
+            for (int j = 0; j <= i; j++) {
+                cin >> triangle[i][j];
+            }
+        }
+
+        vector<int> currentPath;  // вектор для хранения текущего пути
+        findOptimalPath(triangle, 0, 0, 0, currentPath);
+        cout << "Максимальная сумма нагрузок: " << maxSum << endl;
+        cout << "Оптимальный путь: ";
+        for (int i = 0; i < optimalPath.size(); i++) {
+            cout << optimalPath[i] << " ";
+        }
+        cout << endl;
+
+        cout << "Хотите снова запустить программу?    1.да  2. нет ";  //Возвращение в нач меню
+        cin >> answer;
+        if (answer == 1) {
+            return main();
+        }
+        else {
+            return 0; //заканчивает работу программы 
+        }
+    }
+
+
+    else if (x == 2) {
+        cout << "ПОИСК МИНИМАЛЬНОГО ПУТИ В ЧЕТЫРЕХУГОЛЬНИКЕо" << endl;
+        cout << endl;
+       
+        int n; 
+        cout << "Введите количество строк в четырехугольнике: ";
+        cin >> n;
+
+        vector<vector<int>> quadrilateral(n, vector<int>(n, 0));
+
+        cout << "Введите нагрузки на ребра четырехугольника:" << endl;
+        for (int i = 0; i < n; ++i) {
+            for (int j = 0; j <= i; ++j) {
+                cin >> quadrilateral[i][j];
+            }
+        }
+
+        // Вызыв функции поиска оптимального пути
+        int minPathSum = findMinPath(quadrilateral, 0, 0);
+
+        cout << "Минимальное суммарное значение нагрузок: " << minPathSum << endl;
+
+        cout << "Хотите снова запустить программу?    1.да  2. нет ";
+        cin >> answer;
+        if (answer == 1) {
+            return main();
+        }
+        else {
+            return 0;
+        }
+    }
+    
+
+    else if (x == 3) {
+        cout << "ПОИСК ОПТИМАЛЬНОГО ПУТИ ПОСЛЕДОВАТЕЛЬНОСТИ ОПЕРАЦИЙ ПРИ ВОЗВЕДЕНИИ ЧИСЛА В СТЕПЕНЬ" << endl;
+        cout << endl;
+
+        int exponent;
+        cout << "Введите степень: ";
+        cin >> exponent;
+
+        vector<int> operations;
+        optimalSequence(exponent, operations);
+
+        cout << "Оптимальное количество операций: " << operations.size() - 1 << endl;
+        cout << "Оптимальная последовательность операций: ";
+        for (int i = 0; i < operations.size(); ++i) {
+            cout << operations[i];
+            if (i < operations.size() - 1) {
+                cout << " -> ";
+            }
+        }
+        cout << endl;
+        cout << "Хотите снова запустить программу?    1.да  2. нет ";
+        cin >> answer;
+        if (answer == 1) {
+            return main();
+        }
+        else {
+            return 0;
+        }
+    }
+   
+
+    else if (x == 4) {
+
+        cout << "ПОИСК МАКСИМАЛЬНО СОВПАДАЮЩЕЙ ПО ЦЕПОЧКИ " << endl;
+        cout << endl;
+
+        // Ввод двух цепочек символов без пробелов ПОДРЯД
+        string str1, str2;
+        cout << "Введите первую цепочку: ";
+        cin >> str1;
+        cout << "Введите вторую цепочку: ";
+        cin >> str2;
+
+        string result = findMaxCommonSubsequence(str1, str2, str1.length(), str2.length());
+
+        cout << "Максимально совпадающая подцепочка: " << result << endl;
+        cout << "Хотите снова запустить программу?    1.да  2. нет ";
+        cin >> answer;
+        if (answer == 1) {
+            return main();
+        }
+        else {
+            return 0;
+        }
+    }
+
+
+    else if (x == 5) {
+        cout << "РЕШЕНИЕ ЗАДАЧ О РЮКЗАКЕ" << endl;
+        cout << endl;
+
+        int capacity;
+        cout << "Введите максимально возможный вес рюкзака: ";
+        cin >> capacity;
+
+        int k; 
+        cout << "Введите количество предметов: ";
+        cin >> k;
+
+        vector<Item> items(k);
+
+        cout << "Введите вес и полезность для каждого предмета:" << endl;
+        for (int i = 0; i < k; ++i) {
+            cout << "Предмет " << i + 1 << ": ";
+            cin >> items[i].weight >> items[i].value;
+        }
+
+        vector<int> includedItems(k, 0); // Массив для хранения информации о включенных предметах
+
+        int maxValue = knapsackRecursive(capacity, items, k, includedItems);
+
+        cout << "Максимально возможная суммарная полезность: " << maxValue << endl;
+        cout << "Номера включенных предметов: ";
+        for (int i = 0; i < k; ++i) {
+            if (includedItems[i] == 1) {
+                cout << i + 1 << " ";
+            }
+        }
+        cout << endl;
+
+        cout << "Хотите снова запустить программу?    1.да  2. нет ";
+        cin >> answer;
+        if (answer == 1) {
+            return main();
+        }
+        else {
+            return 0;
+        }
+    }
+}
